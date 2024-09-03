@@ -1,0 +1,32 @@
+<main class="mainContainer">
+  <div class="loginContainer">
+    <form [formGroup]="form" class="loginForm">
+      <h2>Registrar cuenta</h2>
+      <label for="user">Nombre de usuario</label>
+      <input
+        type="text"
+        id="user"
+        name="user"
+        formControlName="username"
+        autocomplete="off"
+      />
+      <label for="pass">Contraseña</label>
+      <input
+        type="password"
+        id="pass"
+        name="pass"
+        formControlName="password"
+        autocomplete="off"
+      />
+      <label for="pass">Confirmar contraseña</label>
+      <input
+        type="password"
+        id="repeatPass"
+        name="repeatPass"
+        formControlName="repeatPassword"
+      />
+      <button type="submit" (click)="openConfirmDialog()">Registrar</button>
+      <button type="button" (click)="toLogin()">Iniciar sesión</button>
+    </form>
+  </div>
+</main>

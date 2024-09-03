@@ -1,1 +1,88 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.texto {
+  font-size: 3rem;
+}
+
+.mainContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://www.nintendo.com/eu/media/images/08_content_images/news_5/2020_5/may_8/wallpapers/mario_kart_8_deluxe/Mario_Kart_8_Deluxe_1_image912w.jpg");
+}
+
+.loginContainer {
+  background: linear-gradient(
+    152deg,
+    rgba(59, 50, 50, 1) 0%,
+    rgba(252, 146, 146, 1) 0%,
+    rgba(255, 245, 150, 1) 14%,
+    rgba(103, 255, 100, 1) 29%,
+    rgba(100, 220, 255, 1) 43%,
+    rgba(100, 113, 255, 1) 54%,
+    rgba(206, 100, 255, 1) 66%,
+    rgba(255, 100, 236, 1) 78%,
+    rgba(255, 100, 142, 1) 88%
+  );
+  width: 25vw;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 0 10px black;
+}
+
+.loginForm {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.loginForm label {
+  font-weight: 600;
+}
+
+.loginForm input {
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-shadow: 0 0 2px black;
+}
+
+.loginForm input:focus {
+  outline: none;
+}
+
+.loginForm button {
+  font-family: "Quicksand";
+  font-size: 1.5rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  margin-top: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 2px black;
+}
+
+.loginForm button:hover {
+  background-color: #cfffd2;
+}
